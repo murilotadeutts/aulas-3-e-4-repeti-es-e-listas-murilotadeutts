@@ -34,3 +34,22 @@ primeira_lista = [*map(int, input("Digite a sua primeira lista (separando os nú
 segunda_lista = [*map(int, input("Digite a sua segunda lista (separando os números por vírgula): ").split(","))]
 
 # Fazer a partir daqui
+
+maior_primeira = primeira_lista[0] # Inicializa a variável 'maior_primeira' com o primeiro elemento da 'primeira_lista' para começar a comparação
+
+for numero in primeira_lista: # Utiliza um loop for para percorrer cada número na 'primeira_lista'
+    if numero > maior_primeira: # Verifica se o número atual é maior do que o valor armazenado em 'maior_primeira'
+        maior_primeira = numero # Se for maior, atualiza o valor de 'maior_primeira' com o número atual
+
+maior_segunda = segunda_lista[0] 
+
+for numero in segunda_lista: 
+    if numero > maior_segunda: 
+        maior_segunda = numero 
+
+if maior_primeira > maior_segunda: 
+    print("Primeira")
+elif maior_segunda > maior_primeira:
+    print("Segunda")
+else:
+    print("Ambas")
