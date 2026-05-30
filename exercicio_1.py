@@ -18,3 +18,11 @@ A soma de 1 até 3 é 6.
 Dica: Use o comando "for" junto com "range()" para percorrer os números,
 e uma variável para ir acumulando a soma.
 """
+
+numero = int(input("Digite um número: ")) 
+soma = 0 # Variável para armazenar a soma dos números
+
+for i in range(1, numero + 1): # Utiliza um loop for para percorrer os números de 1 até o número digitado pelo usuário (inclusive)
+    soma =  soma + i # Adiciona cada número ao valor da variável soma
+
+print(f"A soma de 1 até {numero} é {soma}.")
