@@ -30,4 +30,4 @@ for numero in lista: # Utiliza um loop for para percorrer cada número na lista 
     if numero % 2 != 0: # Verifica se o número é ímpar utilizando o operador de módulo (%), que retorna o resto da divisão do número por 2. Se o resultado for diferente de 0, significa que o número é ímpar
         impares.append(numero) # Se o número for ímpar, adiciona ele à lista 'impares' utilizando o método append()
 
-print(f"Os números ímpares são {impares}.")
+print(f"Os números ímpares são {impares}")
